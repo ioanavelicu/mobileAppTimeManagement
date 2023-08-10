@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnHome"
+        android:title="@string/btnHome"
+        android:icon="@drawable/meniu_home"/>
+    <item
+        android:id="@+id/btnProfil"
+        android:title="@string/btnProfil"
+        android:icon="@drawable/meniu_profil"/>
+    <item
+        android:id="@+id/btnSetari"
+        android:title="@string/btnSetari"
+        android:icon="@drawable/meniu_setari"/>
+
+</menu>

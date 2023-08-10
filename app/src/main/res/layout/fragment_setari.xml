@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSetari">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSetari"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:paddingStart="15dp"-->
+<!--        android:paddingTop="7dp"-->
+<!--        android:text="Setări"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="27sp"-->
+<!--        android:background="#9AF48CB0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/wave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelogare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/logout"
+        android:drawablePadding="5dp"
+        android:text="Deconectare"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSchimbaUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Schimbă username"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/schimba_username"
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDelogare"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSchimbaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Schimbă adresa e-mail"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/email"
+        android:drawableTint="@color/black"
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSchimbaUsername"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSchimbaParola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Schimbă parola"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/parola"
+        android:drawableTint="@color/black"
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSchimbaEmail"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

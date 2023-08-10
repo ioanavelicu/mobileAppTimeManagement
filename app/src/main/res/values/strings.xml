@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Aplicatie</string>
+    <string name="btnAdaugaTask">Adaugă task</string>
+    <string name="btnListaTaskuri">Vezi listă taskuri</string>
+    <string name="btnAdaugaEveniment">Adaugă eveniment</string>
+    <string name="btnListaEvenimente">Vezi listă evenimente</string>
+    <string name="btnAdaugaObiectiv">Adaugă un nou obiectiv</string>
+    <string name="btnListaObiective">Vezi listă obiective</string>
+    <string name="btnJurnal">Jurnal</string>
+    <string name="tvLogin">Conectare</string>
+    <string name="hintLoginEmail">E-mail*</string>
+    <string name="hintLoginParola">Parolă*</string>
+    <string name="btnLogin">Apăsați pentru conectare</string>
+    <string name="tvCreareCont">Creați cont</string>
+    <string name="hintCreareCont">Email*</string>
+    <string name="hintCreareContParola">Parolă*</string>
+    <string name="btnCreareCont">Apăsați pentru crearea contului</string>
+    <string name="btnDelogare">Delogare</string>
+    <string name="btnInregistrareCont">Nu aveți cont?\n Apăsați pentru a crea un cont nou</string>
+    <string name="tvNrTask">Task</string>
+    <string name="btnAdaugaSarcina">Adăugați sarcină</string>
+    <string name="tvSeteazaDeadline">Setați deadline</string>
+    <string name="btnAdaugaCategorieTask">Adăugați o categorie nouă</string>
+    <string name="salveaza">SALVEAZĂ</string>
+    <string name="tvEveniment">Eveniment</string>
+    <string name="btnAlegeDataEveniment">Alegeți dată eveniment</string>
+    <string name="tvDescriereEveniment">Descriere eveniment:</string>
+    <string name="hintAdaugaDescriere">Adăugați descriere</string>
+    <string name="hintCreareContNume">Nume*</string>
+    <string name="hintCreareContUsername">Username*</string>
+    <string name="btnNotite">Notițe</string>
+    <string name="btnAdaugaNotita">Adăugați notiță</string>
+    <string name="hintParolaJurnal">Parolă</string>
+    <string name="tvParolaJurnal">Introduceți parola</string>
+    <string name="tvDialogAdaugaSarcina">Introduceți sarcina</string>
+    <string name="hintSarcinaNoua">Denumire sarcină</string>
+    <string name="btnAdaugaSarcinaNoua">Adăugați</string>
+
+    <string-array name="spinnerGradImportantaTask">
+        <item>Grad importanță</item>
+        <item>RIDICAT</item>
+        <item>MEDIU</item>
+        <item>SCĂZUT</item>
+    </string-array>
+
+    <string-array name="spinnerCategorieTask">
+        <item>Categorie</item>
+        <item>SPORT</item>
+        <item>ȘCOALĂ</item>
+        <item>VACANȚĂ</item>
+        <item>TIMP LIBER</item>
+        <item>JOB</item>
+    </string-array>
+
+    <string-array name="spinnerCategorieEveniment">
+        <item>Categorie</item>
+        <item>ZI DE NAȘTERE</item>
+        <item>ONOMASTICĂ</item>
+        <item>ANIVERSARE</item>
+        <item>PREZENTARE PROIECT</item>
+        <item>ÎNÂLNIRE</item>
+    </string-array>
+
+    <string-array name="logo">
+        <item>Bine ați venit!</item>
+        <item>PlanIt</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnSalveazaTask">Salvează</string>
+    <string name="btnStergeTask">Șterge</string>
+    <string name="hintDenumireTask">Introduceți denumirea taskului</string>
+    <string name="toastCreareContSucces">Cont creat</string>
+    <string name="toastCreareContFailed">Nu s-a putu face autentificarea</string>
+    <string name="etNumeEveniment">Adăugați denumire eveniment</string>
+    <string name="hintDenumireNotita">Adăugați denumire notiță</string>
+    <string name="hintContinut">Adăugați notiță</string>
+    <string name="btnSalveazaNotitaNoua">Salvează</string>
+    <string name="btnVizualizareTask">Vezi task</string>
+    <string name="btnModificaTask">Modificați</string>
+    <string name="btnPrincipal">Organizeaza-te acum</string>
+    <string name="tvTask">Task</string>
+    <string name="tvAdaugaTask">Adăugați task</string>
+    <string name="fabListaTaskuri">Listă taskuri</string>
+    <string name="tvNotite">Notițe</string>
+    <string name="tvObiective">Obiective</string>
+    <string name="tvJurnal">Jurnal</string>
+    <string name="tvEv">Eveniment</string>
+    <string name="tvAdaugaEveniment">Adăugați   eveniment</string>
+    <string name="tvListaEvenimente">Listă          evenimente</string>
+    <string name="btnProfil">Profil</string>
+    <string name="btnHome">Acasă</string>
+    <string name="btnSetari">Setări</string>
+    <string name="fabPrincipal">ORGANIZEAZA-TE ACUM</string>
+    <string name="tvParolaNouaJurnal">Parolă jurnal</string>
+    <string name="btnAdaugaInJurnal">Scrie în jurnal</string>
+    <string name="btnSalveazaJurnal">Salvează</string>
+    <string name="tvNrSarcini">Număr de sacini rămase: </string>
+    <string name="hintDenumireTaskModificat">Denumire task</string>
+    <string name="tvListaSarcini">Listă sarcini: </string>
+    <string name="tvDeadlineVizualizare">Deadline: </string>
+    <string name="tvGradImportanta">Grad de importanță: </string>
+    <string name="tvCategorie">Categorie: </string>
+    <string name="btnSalveazaTaskV">Salvează</string>
+    <string name="hintDenumireEveniment">Denumire eveniment</string>
+    <string name="etDataEveniment">Dată eveniment</string>
+    <string name="hintDenumireEvenimentModificat">Denumire eveniment</string>
+    <string name="btnSeteazaReminderTask">Setați reminder</string>
+    <string name="hintReminderTask">Data și ora</string>
+    <string name="btnAlegeDataSiOraReminderTask">Alegeți data și ora</string>
+    <string name="btnSalveazaReminder">Salvează</string>
+    <string name="btnInchideReminder">Închide</string>
+    <string name="hintDataSiOraReminder">Dată și oră reminder</string>
+    <string name="tvReminderTaskVizualizare">Reminder:</string>
+    <string name="hintAdaugaDescriereObiectiv">Adăugați descriere obiectiv</string>
+    <string name="btnAlegeIconitaObiectiv">Alegeți iconita obiectiv</string>
+    <string name="btnSalveazaObiectiv">Salvează</string>
+    <string name="btnInchideObiectiv">Închide</string>
+    <string name="tvTaskComplet">Task complet</string>
+    <string name="tvFelicitariTaskComplet">FELICITĂRI</string>
+    <string name="btnSalveazaCategorie">Salvează</string>
+    <string name="btnInchideCategorie">Închide</string>
+    <string name="tvObiectiveComlete">TOATE OBIECTIVELE AU FOST ÎNDEPLINITE</string>
+    <string name="btnCerereDePrietenie">Trimiteți cerere de prietenie</string>
+    <string name="btnListaCereriDePrietenie">Listă cereri de prietenie</string>
+    <string name="btnListaPrieteni">Listă prieteni</string>
+    <string name="tvCautaUtilizator">Introduceți usernameul utilizatorului căutat</string>
+    <string name="btnTrimiteCerereDePrietenie">Trimiteți cerere de prietenie</string>
+    <string name="btnCerereDePrietenieTrimisa">Cerere de prietenie trimisă</string>
+    <string name="btnAccepta">Acceptă</string>
+    <string name="btnRespinge">Respinge</string>
+    <string name="reminderTaskNestat">Taskul nu are reminder setat</string>
+    <string name="gradImportantaTaskNesetat">Taskul nu are un grad de importanță setat</string>
+    <string name="categorieNesetataTask">Taskul nu are o categorie setată</string>
+    <string name="btnStatistici">Statistici</string>
+    <string name="cautaNotita">Caută o notiță</string>
+    <string name="optModificaNotita">Modifică</string>
+    <string name="optStergeNotita">Șterge</string>
+    <string name="optPartajeazaNotita">Partajează</string>
+    <string name="tvNottiaPartajata">Prieteni cu care partajați această notiță</string>
+    <string name="toastUsernameulDejaExista">Usernameul deja există</string>
+    <string name="toastConectareSucces">Conectare efectuată cu succes</string>
+    <string name="toastConectareFailed">Nu s-a putut realizara conectarea.</string>
+    <string name="toastTaskAddSucces">TASK ADĂUGAT CU SUCCES</string>
+    <string name="toastTaskAddEroare">EROARE LA ADĂUGARE TASK</string>
+    <string name="toastActualizareTaskSucces">TASK ACTUALIZAT CU SUCCES</string>
+    <string name="toastActualizareTaskFail">EROARE LA MODIFICARE TASK</string>
+    <string name="toastResminderTask">Taskul nu are reminder setat</string>
+</resources>

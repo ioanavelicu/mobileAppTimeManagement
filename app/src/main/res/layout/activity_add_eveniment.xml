@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEvenimentActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNumeEveniment"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/etNumeEveniment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:counterTextColor="@color/light_blue"
+        app:boxBackgroundColor="#4864B5F6"
+        app:boxStrokeColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etNumeEveniment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAlegeDataEveniment"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buton_albastru"
+        android:text="@string/btnAlegeDataEveniment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNumeEveniment" />
+
+    <EditText
+        android:id="@+id/etDataEveniment"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="#038DFB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlegeDataEveniment"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeteazaReminderEveniment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSeteazaReminderTask"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buton_albastru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNumeEveniment" />
+
+    <EditText
+        android:id="@+id/etReminderEveniment"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="#038DFB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etDataEveniment"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeteazaReminderEveniment"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/tvDescriereEveniment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDescriereEveniment"
+        android:textColor="#5EB3F6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDataEveniment" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDescriereEveniemnt"
+        android:layout_width="380dp"
+        android:layout_height="180dp"
+        android:hint="@string/hintAdaugaDescriere"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:counterTextColor="@color/light_blue"
+        app:boxBackgroundColor="#4864B5F6"
+        app:boxStrokeColor="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriereEveniment">
+
+        <EditText
+            android:id="@+id/etDescriereEveneiment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="top|left"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerCategorieEveniment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilDescriereEveniemnt"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdaugaCategorieEveniment"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/buton_albastru"
+        android:text="@string/btnAdaugaCategorieTask"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCategorieEveniment"
+        app:layout_constraintTop_toBottomOf="@+id/tilDescriereEveniemnt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalveazaEvenimentNou"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/salveaza"
+        android:textSize="20sp"
+        android:background="@drawable/buton_albastru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdaugaCategorieEveniment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

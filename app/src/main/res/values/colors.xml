@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="culoare1">#EFB6C7</color>
+    <color name="culoare2">#F3D7DF</color>
+    <color name="culoare3">#CAEAF7</color>
+    <color name="culoare4">#E2ADF1</color>
+    <color name="culoare5">#A6D5FB</color>
+    <color name="culoare6">#C9B1F4</color>
+    <color name="culoare7">#F6A9DA</color>
+    <color name="culoare8">#ADB9FA</color>
+    <color name="light_blue">#816FBBF8</color>
+    <color name="blue">#ED64B5F6</color>
+    <color name="light_pink">#F8B1CA</color>
+    <color name="jurnal">#E6777575</color>
+    <color name="red">#D60606</color>
+    <color name="delete_red">#EF1414</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_albastru">#279AF6</color>
+    <color name="cv_alabstra">#DEEAF3</color>
+    <color name="til_albastru">#4864B5F6</color>
+    <color name="til_icon_albastru">#3A9FF1</color>
+    <color name="parola_albastru">#AB64B5F6</color>
+</resources>

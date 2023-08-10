@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilParolaJurnal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/til_albastru"
+        app:boxStrokeColor="@color/light_blue"
+        app:counterTextColor="@color/light_blue"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/parola_albastru"
+        app:startIconDrawable="@drawable/parola"
+        app:startIconTint="@color/til_icon_albastru"
+        android:hint="Parolă"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etParolaJurnal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_margin="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilParolaJurnal" />
+
+    <Button
+        android:id="@+id/btnSalveazaJ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intră în jurnal"
+        android:textAllCaps="false"
+        android:layout_marginEnd="8dp"
+        android:stateListAnimator="@null"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:textSize="16sp"
+        android:textColor="@color/text_albastru"
+        android:shadowColor="@color/light_pink"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilParolaJurnal" />
+
+    <Button
+        android:id="@+id/btnInchideJ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:shadowColor="@color/light_pink"
+        android:text="@string/btnInchideObiectiv"
+        android:textAllCaps="false"
+        android:textColor="@color/text_albastru"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilParolaJurnal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

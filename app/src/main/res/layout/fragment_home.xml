@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHome">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPrincipal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        app:elevation="10dp"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvButonPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:text="@string/fabPrincipal"
+        android:textColor="#FA92B6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPrincipal"
+        app:layout_constraintEnd_toEndOf="@+id/btnPrincipal"
+        app:layout_constraintStart_toStartOf="@+id/btnPrincipal"
+        app:layout_constraintTop_toTopOf="@+id/btnPrincipal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/light_blue"
+        android:clickable="true"
+        android:src="@drawable/fab_task"
+        app:fabCustomSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrincipal"
+        app:layout_constraintEnd_toStartOf="@+id/fabEveniment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTask"
+        android:textColor="#F06292"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrincipal"
+        app:layout_constraintEnd_toStartOf="@+id/fabTask" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdaugaTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:backgroundTint="#9AF48CB0"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/fabTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fab_add_task"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvAdaugaTask"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/tvAdaugaTask"
+        android:textAlignment="center"
+        android:textColor="#4D8BE6"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fabAdaugaTask"
+        app:layout_constraintEnd_toStartOf="@+id/fabAdaugaTask"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabListaTaskuri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9AF48CB0"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/fabTask"
+        app:layout_constraintStart_toEndOf="@+id/fabAdaugaTask"
+        app:srcCompat="@drawable/fab_lista_taskuri"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvListaTaskuri"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/fabListaTaskuri"
+        android:textAlignment="center"
+        android:textColor="#4D8BE6"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fabListaTaskuri"
+        app:layout_constraintStart_toEndOf="@+id/tvAdaugaTask" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNotite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:backgroundTint="@color/light_blue"
+        android:clickable="true"
+        app:fabCustomSize="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/fabJurnal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal"
+        app:srcCompat="@drawable/fab_notita"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvNotite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/tvNotite"
+        app:layout_constraintEnd_toStartOf="@+id/fabNotite"
+        android:textColor="#F06292"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabObiective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/light_blue"
+        android:clickable="true"
+        app:fabCustomSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fabJurnal"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal"
+        app:srcCompat="@drawable/fab_obiective"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvObiective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/tvObiective"
+        android:textColor="#F06292"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fabObiective"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabJurnal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_blue"
+        android:clickable="true"
+        app:fabCustomSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrincipal"
+        app:srcCompat="@drawable/fab_jurnal"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvJurnal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvJurnal"
+        android:textColor="#F06292"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEveniment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/light_blue"
+        android:clickable="true"
+        app:fabCustomSize="70dp"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fabTask"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fab_eveniment"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvEveniment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/tvEv"
+        android:textColor="#F06292"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrincipal"
+        app:layout_constraintStart_toEndOf="@+id/fabEveniment" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdaugaEveniment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:backgroundTint="#9AF48CB0"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/fabEveniment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fab_adauga_eveniment"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvAdaugaEveniment"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/tvAdaugaEveniment"
+        android:textAlignment="center"
+        android:textColor="#4D8BE6"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fabAdaugaEveniment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabListaEvenimente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9AF48CB0"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/fabEveniment"
+        app:layout_constraintEnd_toStartOf="@+id/fabAdaugaEveniment"
+        app:srcCompat="@drawable/fab_lista_evenimente"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvListaEvenimente"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/tvListaEvenimente"
+        android:textAlignment="center"
+        android:textColor="#4D8BE6"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fabListaEvenimente"
+        app:layout_constraintEnd_toStartOf="@+id/tvAdaugaEveniment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

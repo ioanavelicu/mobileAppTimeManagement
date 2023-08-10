@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VizualizareTaskActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDenumireTaskVizualizare"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hintDenumireTaskModificat"
+        app:boxBackgroundColor="#86F8B4CC"
+        app:boxStrokeColor="@color/light_pink"
+        app:counterTextColor="@color/light_pink"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etDenumireTaskVizualizare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:enabled="false"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvListaSarciniVizualizare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F6699A"
+        android:text="@string/tvListaSarcini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilDenumireTaskVizualizare" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclcerViewLayoutSarciniVizualizareTask"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rv_task_sarcini_roz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvListaSarciniVizualizare" />
+
+    <TextView
+        android:id="@+id/tvDeadlineVizualizare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDeadlineVizualizare"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#F6699A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclcerViewLayoutSarciniVizualizareTask" />
+
+    <EditText
+        android:id="@+id/etDeadlineVizualizare"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclcerViewLayoutSarciniVizualizareTask"
+        app:layout_constraintStart_toEndOf="@id/tvDeadlineVizualizare"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvReminderTaskVizualizare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvReminderTaskVizualizare"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#F6699A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeadlineVizualizare" />
+
+    <EditText
+        android:id="@+id/etReminderTaskVizualizare"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="5dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/etDeadlineVizualizare"
+        app:layout_constraintStart_toEndOf="@id/tvReminderTaskVizualizare"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvGradImportantaVizualizare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvGradImportanta"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#F6699A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReminderTaskVizualizare" />
+
+    <EditText
+        android:id="@+id/etGradImportantaVizualizare"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-7dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvGradImportantaVizualizare"
+        app:layout_constraintTop_toBottomOf="@+id/etReminderTaskVizualizare"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvCategorieVizualizare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/tvCategorie"
+        android:textColor="#F6699A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGradImportantaVizualizare" />
+
+    <EditText
+        android:id="@+id/etCategorieVizualizare"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:layout_marginStart="5dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/etGradImportantaVizualizare"
+        app:layout_constraintStart_toEndOf="@id/tvCategorieVizualizare"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalveazaTask"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSalveazaTaskV"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/buton_roz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCategorieVizualizare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

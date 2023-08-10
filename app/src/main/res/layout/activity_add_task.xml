@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDenumireTask"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintDenumireTask"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+        app:hintTextColor="@color/black"
+        app:counterTextColor="@color/light_blue"
+        app:boxBackgroundColor="#4864B5F6"
+        app:boxStrokeColor="@color/light_blue"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etDenumireTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdaugaSarcina"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/buton_albastru"
+        android:text="@string/btnAdaugaSarcina"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilDenumireTask" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewListaSarcini"
+        android:layout_width="380dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rv_task_sarcini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdaugaSarcina" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeteazaDeadline"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSeteazaDeadline"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buton_albastru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleViewListaSarcini" />
+
+    <EditText
+        android:id="@+id/etDeadline"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="#038DFB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeteazaDeadline"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSeteazaReminder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSeteazaReminderTask"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buton_albastru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleViewListaSarcini" />
+
+    <EditText
+        android:id="@+id/etReminderTask"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:enabled="false"
+        android:text=""
+        android:textColor="#038DFB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/etDeadline"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeteazaReminder"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerGradImportantaTask"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDeadline"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorieTask"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerGradImportantaTask"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdaugaCategorieTask"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/buton_albastru"
+        android:text="@string/btnAdaugaCategorieTask"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/spinnerCategorieTask"
+        app:layout_constraintTop_toBottomOf="@+id/recycleViewListaSarcini" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSalveazaTaskNou"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/salveaza"
+        android:textSize="20sp"
+        android:background="@drawable/buton_albastru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdaugaCategorieTask"
+        android:focusable="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
